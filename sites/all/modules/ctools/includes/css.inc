@@ -289,7 +289,7 @@ function ctools_css_disassemble($css) {
   // Split out each statement. Match either a right curly brace or a semi-colon
   // that precedes a left curly brace with no right curly brace separating them.
   $statements = preg_split('/}|;(?=[^}]*{)/', $css);
-
+  
   // If we have any statements, parse them.
   if (!empty($statements)) {
     // Iterate through all of the statements.
